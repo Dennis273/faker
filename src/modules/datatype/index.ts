@@ -140,23 +140,13 @@ export class Datatype {
    * faker.datatype.string(5) // '6Bye8'
    */
   string(length = 10): string {
-    const maxLength = Math.pow(2, 20);
-    if (length >= maxLength) {
-      length = maxLength;
-    }
-
-    const charCodeOption = {
-      min: 33,
-      max: 125,
-    };
-
-    let returnString = '';
-
-    for (let i = 0; i < length; i++) {
-      returnString += String.fromCharCode(this.number(charCodeOption));
-    }
-
-    return returnString;
+    deprecated({
+      deprecated: 'faker.datatype.string()',
+      proposed: 'faker.string.random()',
+      since: '7.4',
+      until: '8.0',
+    });
+    return this.faker.string.random(length);
   }
 
   /**
