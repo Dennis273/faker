@@ -1,5 +1,11 @@
 // Vitest Snapshot v1
 
+exports[`string > random > should return a deterministic string of given length 1`] = `"Cky2eiXX/J/*&Kq@X.b]\\"&{dnx4!1}2Z=YQ!I#<QYF"`;
+
+exports[`string > random > should return a deterministic string of given length 2`] = `"9U/4:SK$>6QX9@{:e=+kD)[B,e|/Jqjjj!BLGDWQgC"`;
+
+exports[`string > random > should return a deterministic string of given length 3`] = `"wKti5-}$_/\`4hHA0afl\\"h^]dnwI<q|p|5KWu3/CZ|J"`;
+
 exports[`string > seed: 42 > hexadecimal > should return a deterministic hex of given length 1`] = `"8BE4ABdd39321aD7d3fe01FfCE404F4d6db0906bd8"`;
 
 exports[`string > seed: 42 > hexadecimal() 1`] = `"8"`;
